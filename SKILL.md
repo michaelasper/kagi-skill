@@ -60,7 +60,14 @@ If Brave Search is rate-limited (429) or you want better results:
 - Use `scripts/kagi_search.py` to fetch results
 - Then use the main agent model to synthesize / summarize based on the returned URLs/snippets
 
+## 4) Browser fallback (logged-in session)
+
+If Search API is beta-gated (401) or you want to avoid API usage, use the browser fallback.
+
+- See: `references/kagi-browser-fallback.md`
+
 ## Files
 
 - API reference snippets: `references/kagi-api.md`
+- Browser fallback workflow: `references/kagi-browser-fallback.md`
 - Python client + CLIs: `scripts/kagi_client.py`, `scripts/kagi_search.py`, `scripts/kagi_fastgpt.py`
